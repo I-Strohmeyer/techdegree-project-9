@@ -8,8 +8,8 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.container {
-    padding: 24px;
+section {
+    margin: 24px;
 }
 
 
@@ -27,20 +27,19 @@ header h1 {
     margin-bottom: 10px;
 }
 
-/*.nav-wrapper li {
+.nav-wrapper {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-} */
-
-header li {
-    margin-bottom: 10px;
 }
 
-header a {
-  width: 100%;
+header button {
+  width: 140px;
   height: 45px;
+  
+  font-size: 11px;
+  text-transform: uppercase;
   letter-spacing: 2.5px;
   font-weight: 500;
   color: #000;
@@ -51,22 +50,14 @@ header a {
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
-  line-height: 45px;
-  padding: 12px;
-  text-decoration: none;
-  
-  
+  text-decoration: none;  
 }
 
-header a:hover {
+header button:hover {
   background-color: #2EE59D;
   box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
   color: #fff;
-  
-}
-
-header li:hover {
-    transform: translateY(-1px);
+  transform: translateY(-2px);
 }
 
 /***********************
@@ -78,6 +69,10 @@ header li:hover {
 /***********************
 *     Projects         *
 ***********************/
+#projects {
+    display: none;
+}
+
 
 
 
@@ -85,6 +80,9 @@ header li:hover {
 /***********************
 *     Contact          *
 ***********************/
+#contact {
+    display: none;
+}
 
 
 
