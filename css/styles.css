@@ -1,4 +1,6 @@
-/** GLOBAL **/
+/***********************
+*      General         *
+***********************/
 
 * {
     box-sizing: border-box;
@@ -24,7 +26,7 @@ header {
 header h1 {
     font-size: 2em;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 32px;
 }
 
 .nav-wrapper {
@@ -38,7 +40,6 @@ header h1 {
 header button {
   width: 90%;
   height: 45px;
-  
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 2.5px;
@@ -52,7 +53,7 @@ header button {
   cursor: pointer;
   outline: none;
   text-decoration: none; 
-  margin-bottom: 10px; 
+  margin-bottom: 16px; 
 }
 
 header button:hover {
@@ -60,6 +61,11 @@ header button:hover {
   box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
   color: #fff;
   transform: translateY(-2px);
+}
+
+h2 {
+    font-size: 1.3em;
+    margin-bottom: 16px;
 }
 
 /***********************
@@ -73,6 +79,11 @@ header button:hover {
 ***********************/
 #projects {
     display: none;
+}
+
+.card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 
@@ -100,9 +111,12 @@ header button:hover {
         justify-content: space-between;
     }    
     header button {
-    display: inline-block;
-    margin-left: 8px;
-    width: 140px;;
+        display: inline-block;
+        margin-left: 8px;
+        width: 140px;;
+    }
+    .nav-wrapper {
+        flex-direction: row;
     }
 
 }
@@ -111,6 +125,10 @@ header button:hover {
 
     header li {
         margin-left: 20px;
+    }
+    
+    .card-wrapper {
+        grid-template-columns: 1fr 1fr;
     }
 
     
