@@ -24,7 +24,7 @@ header {
 header h1 {
     font-size: 2em;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .nav-wrapper {
@@ -32,10 +32,11 @@ header h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 header button {
-  width: 140px;
+  width: 90%;
   height: 45px;
   
   font-size: 11px;
@@ -50,7 +51,8 @@ header button {
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
-  text-decoration: none;  
+  text-decoration: none; 
+  margin-bottom: 10px; 
 }
 
 header button:hover {
@@ -93,14 +95,15 @@ header button:hover {
 
 @media (min-width: 768px) {
 
-header {
-    display: flex;
-    justify-content: space-between;
-}    
-header li {
+    header {
+        display: flex;
+        justify-content: space-between;
+    }    
+    header button {
     display: inline-block;
     margin-left: 8px;
-}
+    width: 140px;;
+    }
 
 }
 
