@@ -23,7 +23,7 @@ projectbtn.addEventListener( 'click', event => {
 });
 
 contactbtn.addEventListener( 'click', event => {
-    contact.style.display = "block";
+    contact.style.display = "flex";
     projects.style.display = "none";
     about.style.display = "none";
 });

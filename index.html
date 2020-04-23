@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Portfolio</title>
+    <title>Max Mustermann | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link
@@ -15,22 +15,29 @@
   </head>
   <body>
     <header>
-      <h1>My Portfolio</h1>
+      <h1>Max Mustermann</h1>
       <div class="nav-wrapper">
-        <button id="aboutbtn">about</button>
-        <button id="projectbtn">projects</button>
-        <button id="contactbtn">contact</button>
+        <button id="aboutbtn">About</button>
+        <button id="projectbtn">My work</button>
+        <button id="contactbtn">Contact</button>
       </div>
     </header>
 
+    <main>
     <section id="about">
-      <h2>About</h2>
-      <p>
-        Non eu ex irure et labore enim incididunt dolor cupidatat culpa do. Anim
-        ipsum sit consectetur Lorem nisi ad ipsum nulla sit cillum adipisicing
-        minim duis. Aliqua laboris dolore deserunt non sunt ut et amet irure
-        tempor magna eu aliqua sint.
+      <h2>About Me</h2>
+      <div class="about-wrapper">
+      <p class="about-p">
+        Hello, my name is M.Mustermann, a Munich-based Frontend-Developer-to-be. 
+        I'm a  trainee at my current company, and will switch into Development starting from September 2020.
+        Until then I am going to get my Treehouse Certificate and learn Angular.
       </p>
+      <p class="about-p">My set of skills include Html, Css and Javascript. In addition I'm interested in Design. 
+         I'm still in the beginning stages, but I want to go further than just building a website.
+         Longterm I would also like to get a bit more into the server-side way of handling things.
+      </p>
+      <div class="spans"><span>HTML</span><span>CSS</span><span>Javascript</span></div>
+    </div>
     </section>
 
     <section id="projects">
@@ -62,14 +69,16 @@
     </section>
 
     <section id="contact">
-      <h2>Contact</h2>
+      <div class="contact-outer">
+      <h2>Get in Touch</h2>
+      <div class="contact-inner">
       <p>
-        Reprehenderit aliqua ut ad Lorem in culpa ipsum ullamco sint. Ad laboris
-        mollit tempor nostrud Lorem et elit sit in. Reprehenderit pariatur sit
-        enim quis dolor ullamco aute tempor nostrud proident incididunt qui
-        consectetur.
+        If you have liked what you have seen so far and want to chat, you can contact me on XXXX or XXXXX.
       </p>
+    </div>
+    </div>
     </section>
+  </main>
 
     <script src="js/app.js"></script>
   </body>
