@@ -3,79 +3,70 @@
 ***********************/
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    background: black;
-    
-    
-    width: 100%;
-    height: 100vh;
+  background: black;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif; 
-    height: 100%;
-    position: relative;
-        
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  padding-bottom: 100px;
+  min-height: 100vh;
 }
 
 main {
-    background-color: #fff;
-    
-    border-radius: 4px;
-    margin: auto 32px;
-    position: relative;
+  background-color: #fff;
+
+  border-radius: 4px;
+  margin: auto 32px;
+  position: relative;
 }
 
 section {
-    padding: 40px 20px 20px 20px;
+  padding: 40px 20px 20px 20px;
+  min-height: 65vh;
 }
-
 
 /***********************
 *      Header          *
 ***********************/
 
 header {
-    padding: 32px;
-    
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
+  padding: 32px;
+
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 
 header h1 {
-    font-size: 2em;
-    font-weight: 600;
-    padding-bottom: 80px;
-    color: #fff;
-}
-
-#mobile {
-    
-    
+  font-size: 2em;
+  font-weight: 600;
+  padding-bottom: 80px;
+  color: #fff;
 }
 
 #mobile svg {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    padding: 16px;
-    background: none;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    height: 70px;
-    width: 70px;
-    margin-bottom: 20px;
-    margin-right: 20px;
-    z-index: 1000;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding: 16px;
+  background: none;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  z-index: 1000;
 }
 
 #mobile svg:hover {
-    box-shadow: 0px 15px 20px rgba(46, 229, 214, 0.4);
+  box-shadow: 0px 15px 20px rgba(46, 229, 214, 0.4);
 }
 
 .nav-wrapper {
@@ -85,16 +76,15 @@ header h1 {
   justify-content: center;
   flex-direction: column;
 
-  
-  display: none;/* for now because burger*/
-   /* for now because burger*/
+  display: none; /* for now because burger*/
+  /* for now because burger*/
 }
 
 header button {
   width: 90%;
   height: 45px;
   font-size: 11px;
-  
+
   letter-spacing: 2.5px;
   font-weight: 500;
   color: #000;
@@ -105,8 +95,8 @@ header button {
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
-  text-decoration: none; 
-  margin-bottom: 16px; 
+  text-decoration: none;
+  margin-bottom: 16px;
 }
 
 header button:hover {
@@ -116,76 +106,88 @@ header button:hover {
   transform: translateY(-2px);
 }
 
-h2 {
-    font-size: 1.3em;
-    margin-bottom: 16px;
-}
-
 /***********************
 *     About           *
 ***********************/
 
-#about {
-    text-align: center;
+.content-wrapper {
+  max-width: 700px;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  
+  padding: 20px;
 }
 
-.about-wrapper {
-    max-width: 700px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 20px;
+.me-avatar {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  float: right;
+  shape-outside: circle();
 }
 
-.about-p {
-    
+.first-p {
+  padding-top: 24px;
+  padding-bottom: 8px;
 }
 
 section h2 {
-    position: absolute;
-    top: -25px;
-    left: -25px;
-    font-weight: bold;
-    font-size: 70px;
-    line-height: 50px;
+  position: absolute;
+  top: -25px;
+  left: 0px;
+  font-weight: bold;
+  font-size: 3.5em;
+  line-height: 50px;
 }
 
 section p {
-    font-size: 18px;
-    line-height: 1.6;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  margin-bottom: 24px;
+}
+
+.span {
+  padding-bottom: 24px;
+}
+
+.skill {
+  display: inline-block;
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 8px;
 }
 
 /***********************
 *     Projects         *
 ***********************/
 #projects {
-    display: none;
+  display: none;
 }
 
 .card-wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
+  display: grid;
+  grid-template-columns: 1fr;
 }
-
-
-
-
 
 /***********************
 *     Contact          *
 ***********************/
 #contact {
-    display: none; 
-    align-items: center;
-    text-align: center; 
-    
+  display: none;
 }
 
-#contact .contact-outer {
+#contact a {
+    display: inline-block;
+    padding: 18px 18px 18px 0;
+}
 
-
+.icon {
+    height: 30px;
+    
 }
 
 /***********************
@@ -193,73 +195,79 @@ section p {
 ***********************/
 
 #orange {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 #teal {
-    position: absolute;
-    z-index: 100;
-    bottom: 0;
-    right: 0;
+  position: absolute;
+  z-index: 100;
+  bottom: 0;
+  right: 0;
 }
-
-
-
 
 /***********************
 *     Breakpoints      *
 ***********************/
-@keyframes changeColor {
-    0% {
-        background-position: 0 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0 50%;
-    }
-}
-
-
-
 
 @media (min-width: 768px) {
-
-    /*html {
+  /*html {
         animation: changeColor 15s ease-in-out infinite;
     }*/
-    header {
-        display: flex;
-        justify-content: space-between;
-    }    
-    header button {
-        display: inline-block;
-        margin-left: 8px;
-        width: 140px;;
-    }
-    .nav-wrapper {
-        flex-direction: row;
-        display: flex;
-    }
-    #mobile svg {
-        display: none;
-    }
 
+  header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 70px 0;
+  }
+  header button {
+    display: inline-block;
+    margin-left: 36px;
+    width: 140px;
+    border: 2px solid #fff;
+    background: none;
+    color: #fff;
+  }
+  header button:hover {
+    border: none;
+  }
+  .nav-wrapper {
+    flex-direction: row;
+    display: flex;
+  }
+  main {
+    margin: 0 auto;
+    max-width: 65%;
+  }
+  section {
+    min-height: 50vh;
+  }
+  #mobile svg {
+    display: none;
+  }
+  section h2 {
+    left: -25px;
+    font-size: 3.8em;
+  }
+  #teal {
+    position: fixed;
+  }
 }
 
 @media (min-width: 1024px) {
+  header li {
+    margin-left: 20px;
+  }
 
-    header li {
-        margin-left: 20px;
-    }
-    
-    .card-wrapper {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    
+  header button {
+    margin-left: 48px;
+  }
+  section h2 {
+      font-size: 4.2em;
+  }
+  .card-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
 }

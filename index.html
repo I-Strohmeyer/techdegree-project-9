@@ -17,15 +17,18 @@
 
    
   
-      <svg id="teal" width="250" height="250" viewBox="0 0 250 250" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M522 28.8935V552H42.9913C15.5344 499.703 0 440.166 0 377C0 168.789 168.789 0 377 0C428.382 0 477.364 10.2792 522 28.8935Z" fill="url(#paint1_linear)"/>
-        <defs>
-        <linearGradient id="paint1_linear" x1="429.5" y1="771.5" x2="601.72" y2="14.4126" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#07A0B3"/>
-        <stop offset="1" stop-color="#A5DDE4" stop-opacity="0"/>
-        </linearGradient>
-        </defs>
-        </svg>
+      
+
+        <svg id="teal" width="522" height="552" viewBox="0 0 522 552" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M522 28.8935V552H42.9913C15.5344 499.703 0 440.166 0 377C0 168.789 168.789 0 377 0C428.382 0 477.364 10.2792 522 28.8935Z" fill="url(#paint1_linear)"/>
+          <defs>
+          <linearGradient id="paint1_linear" x1="429.5" y1="771.5" x2="601.72" y2="14.4126" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#07A0B3"/>
+          <stop offset="1" stop-color="#A5DDE4" stop-opacity="0"/>
+          </linearGradient>
+          </defs>
+          </svg>
+          
 
 
 
@@ -59,55 +62,68 @@
     <main>
     <section id="about">
       <h2>About Me</h2>
-      <div class="about-wrapper">
-      <p class="about-p">
-        Hello, my name is M.Mustermann, a Munich-based Frontend-Developer-to-be. 
+      <div class="content-wrapper">
+        <img class="me-avatar" src="images/ava01.JPG" alt="avatar">
+      <p class="first-p">
+        <strong>Hello,</strong> my name is M.Mustermann, a Munich-based Frontend-Developer-to-be. 
         I'm a  trainee at my current company, and will switch into Development starting from September 2020.
         Until then I am going to get my Treehouse Certificate and learn Angular.
       </p>
-      <p class="about-p">My set of skills include Html, Css and Javascript. In addition I'm interested in Design. 
+      <p>My set of skills include Html, Css and Javascript. In addition I'm interested in Design. 
          I'm still in the beginning stages, but I want to go further than just building a website.
          Longterm I would also like to get a bit more into the server-side way of handling things.
       </p>
-      <div class="spans"><span>HTML</span><span>CSS</span><span>Javascript</span></div>
+      <div class="span"><span class="skill">HTML</span><span class="skill">CSS</span><span class="skill">JavaScript</span></div>
     </div>
     </section>
 
     <section id="projects">
       <div class="cards">
         <h2>Projects</h2>
+        <div class="content-wrapper">
+        <p class="first-p">
+          Here you can find a selection of the projects I have worked on. They all required knowledge of Html and Css.
+          The first project 'Photo Gallery' uses two Jquery libraries in order to provide interactivity.
+        </p>
         <p>
-          Est sint velit anim dolor commodo pariatur duis reprehenderit ipsum
-          officia. Labore culpa quis incididunt nisi incididunt sunt et nulla.
-          Incididunt pariatur et aute amet. Proident est enim proident ex
-          consectetur aliquip et non consequat. Exercitation in ea velit fugiat
-          magna qui cillum. Voluptate nulla cillum non et commodo aute cillum
-          sunt occaecat nostrud consequat nisi.
+
         </p>
         <div class="card-wrapper">
           <div class="card project5">
-            <h3>Project: Interactive Photo-Gallery</h3>
+            <h3>Photo-Gallery</h3>
           </div>
           <div class="card project6">
-            <h3>Project: Gameshow</h3>
+            <h3>Gameshow</h3>
           </div>
           <div class="card project7">
-            <h3>Project: WebApp Dashboard</h3>
+            <h3>WebApp Dashboard</h3>
           </div>
           <div class="card project8">
-            <h3>Project: Empyloyee Directory</h3>
+            <h3>Empyloyee Directory</h3>
           </div>
         </div>
       </div>
+    </div>
     </section>
 
     <section id="contact">
       <div class="contact-outer">
-      <h2>Get in Touch</h2>
-      <div class="contact-inner">
-      <p>
-        If you have liked what you have seen so far and want to chat, you can contact me on XXXX or XXXXX.
+      <h2>Get in touch</h2>
+      <div class="content-wrapper">
+      <p class="first-p">
+        Hey, so you are still here. In that case, why don't you go ahead and contact me?
       </p>
+      <p>
+        I'll get back to you as soon as possible. Sounds good? Sounds good.
+        I'm looking forward to hearing from you.
+        Below you can find some of my other online presences. 
+      </p>
+      <div class="social-wrapper">
+      
+      <a href="#"><img class="icon" src="icon/github-logo.svg" alt="github-icon"></a>
+      <a href="#"><img class="icon" src="icon/linkedin-logo.svg" alt="linkedin-icon"></a>
+      <a href="#"><img class="icon" src="icon/Twitter_Social_Icon_Rounded_Square_White.svg" alt="twitter-icon"></a>
+    </div>
     </div>
     </div>
     </section>
