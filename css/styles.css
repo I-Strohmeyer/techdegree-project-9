@@ -17,15 +17,22 @@ html {
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;     
+    font-family: 'Montserrat', sans-serif; 
+    height: 100%;
+    position: relative;
+        
 }
 
 main {
     background-color: #fff;
+    
+    border-radius: 4px;
+    margin: auto 32px;
+    position: relative;
 }
 
 section {
-    margin: 24px;
+    padding: 40px 20px 20px 20px;
 }
 
 
@@ -34,7 +41,7 @@ section {
 ***********************/
 
 header {
-    padding: 24px;
+    padding: 32px;
     
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
@@ -43,8 +50,32 @@ header {
 header h1 {
     font-size: 2em;
     font-weight: 600;
-    margin-bottom: 32px;
+    padding-bottom: 80px;
     color: #fff;
+}
+
+#mobile {
+    
+    
+}
+
+#mobile svg {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding: 16px;
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    z-index: 1000;
+}
+
+#mobile svg:hover {
+    box-shadow: 0px 15px 20px rgba(46, 229, 214, 0.4);
 }
 
 .nav-wrapper {
@@ -53,6 +84,10 @@ header h1 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  
+  display: none;/* for now because burger*/
+   /* for now because burger*/
 }
 
 header button {
@@ -100,7 +135,26 @@ h2 {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    margin: 0 auto
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-p {
+    
+}
+
+section h2 {
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 50px;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.6;
 }
 
 /***********************
@@ -133,6 +187,25 @@ h2 {
 
 
 }
+
+/***********************
+*     SVG              *
+***********************/
+
+#orange {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#teal {
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    right: 0;
+}
+
 
 
 
@@ -170,6 +243,10 @@ h2 {
     }
     .nav-wrapper {
         flex-direction: row;
+        display: flex;
+    }
+    #mobile svg {
+        display: none;
     }
 
 }
