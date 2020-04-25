@@ -232,6 +232,10 @@ section p {
   display: none;
 }
 
+.card:hover {
+    cursor: pointer;
+}
+
 .card-wrapper {
   display: grid;
   grid-template-columns: 1fr;
