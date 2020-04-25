@@ -356,6 +356,9 @@ h3 {
   .content-wrapper {
       max-width: 850px;
   }
+  header {
+      margin-bottom: 70px;
+  }
   header button {
     margin-left: 48px;
   }
