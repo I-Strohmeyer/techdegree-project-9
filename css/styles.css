@@ -8,21 +8,24 @@
   padding: 0;
 }
 
-html {
-  background: black;
-}
-
 body {
+  background: #000;
   font-family: "Montserrat", sans-serif;
-  position: relative;
+  color: #fff;
   padding-bottom: 100px;
   min-height: 100vh;
 }
 
-main {
-  background-color: #fff;
+.super-container {
+    max-width: 1920px;
+    min-height: 100vh;
+    position: relative;
+}
 
-  border-radius: 4px;
+main {
+  background-color: rgba(0,0,0,0.25);
+  border: 2px solid rgba(255,255,255,0.6);
+  border-radius: 8px;
   margin: auto 32px;
   position: relative;
 }
@@ -38,9 +41,6 @@ section {
 
 header {
   padding: 32px;
-
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
 }
 
 header h1 {
@@ -77,14 +77,12 @@ header h1 {
   flex-direction: column;
 
   display: none; /* for now because burger*/
-  /* for now because burger*/
 }
 
 header button {
   width: 90%;
   height: 45px;
   font-size: 11px;
-
   letter-spacing: 2.5px;
   font-weight: 500;
   color: #000;
@@ -113,19 +111,9 @@ header button:hover {
 .content-wrapper {
   max-width: 700px;
   display: flex;
-
   flex-direction: column;
   justify-content: center;
-  
   padding: 20px;
-}
-
-.me-avatar {
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  float: right;
-  shape-outside: circle();
 }
 
 .first-p {
@@ -156,7 +144,7 @@ section p {
   display: inline-block;
   text-align: left;
   padding: 8px;
-  border: 1px solid #ccc;
+  background: rgba(0,0,0,0.3);
   border-radius: 5px;
   margin-right: 8px;
 }
@@ -173,6 +161,13 @@ section p {
   grid-template-columns: 1fr;
 }
 
+h3 {
+    font-size: 1.4em;
+    padding-bottom: 16px;
+    display: inline-block;
+    margin-left: 12px;
+}
+
 /***********************
 *     Contact          *
 ***********************/
@@ -187,7 +182,6 @@ section p {
 
 .icon {
     height: 30px;
-    
 }
 
 /***********************
@@ -213,10 +207,7 @@ section p {
 ***********************/
 
 @media (min-width: 768px) {
-  /*html {
-        animation: changeColor 15s ease-in-out infinite;
-    }*/
-
+  
   header {
     display: flex;
     justify-content: space-between;
@@ -251,23 +242,38 @@ section p {
     left: -25px;
     font-size: 3.8em;
   }
+  .card-wrapper {
+      gap: 20px;
+      padding-top: 24px;
+  }
   #teal {
     position: fixed;
+  }
+  .skill {
+      margin-right: 20px;
+      background: rgba(0,0,0,0.15);
   }
 }
 
 @media (min-width: 1024px) {
+  
+  body {
+    padding-bottom: 0;
+  }  
   header li {
     margin-left: 20px;
   }
-
   header button {
     margin-left: 48px;
   }
   section h2 {
-      font-size: 4.2em;
+      font-size: 6.5em;
+      left: -90px;
+      top: -60px;
+      line-height: 104px;
   }
   .card-wrapper {
     grid-template-columns: 1fr 1fr;
+    gap: 28px
   }
 }
