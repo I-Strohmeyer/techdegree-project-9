@@ -301,11 +301,11 @@ h3 {
   header {
     display: flex;
     justify-content: space-between;
-    margin: 0 0 70px 0;
+    margin: 0 0 0 0;
   }
   header button {
     display: inline-block;
-    margin-left: 36px;
+    margin-left: 20px;
     width: 140px;
     border: 2px solid #fff;
     background: none;
@@ -367,6 +367,10 @@ h3 {
   }
   section p {
       font-size: 1.6em;
+  }
+  h3 {
+      font-size: 30px;
+      font-weight: 500;
   }
   .card-wrapper {
     grid-template-columns: 1fr 1fr;
