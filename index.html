@@ -15,66 +15,40 @@
   </head>
   <body>
     <div class="super-container">
+      <img id="teal" src="images/teal-round.svg" alt="teal-bg" />
+
       <svg
-        id="teal"
-        width="522"
-        height="552"
-        viewBox="0 0 522 552"
+        id="orange"
+        width="931"
+        height="807"
+        viewBox="0 0 931 807"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M522 28.8935V552H42.9913C15.5344 499.703 0 440.166 0 377C0 168.789 168.789 0 377 0C428.382 0 477.364 10.2792 522 28.8935Z"
-          fill="url(#paint1_linear)"
+          d="M401 807C693.711 807 931 569.711 931 277C931 175.469 902.45 80.6052 852.941 0L0 0V623.566C97.1844 735.916 240.791 807 401 807Z"
+          fill="url(#paint0_linear)"
         />
         <defs>
           <linearGradient
-            id="paint1_linear"
-            x1="429.5"
-            y1="771.5"
-            x2="601.72"
-            y2="14.4126"
+            id="paint0_linear"
+            x1="401"
+            y1="-253"
+            x2="401"
+            y2="807"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#07A0B3" />
-            <stop offset="1" stop-color="#A5DDE4" stop-opacity="0" />
+            <stop offset="0.114583" stop-color="#FF7002" />
+            <stop offset="1" stop-color="#FFB57D" stop-opacity="0" />
           </linearGradient>
         </defs>
       </svg>
 
-      <svg
-          id="orange"
-          width="931"
-          height="807"
-          viewBox="0 0 931 807"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M401 807C693.711 807 931 569.711 931 277C931 175.469 902.45 80.6052 852.941 0L0 0V623.566C97.1844 735.916 240.791 807 401 807Z"
-            fill="url(#paint0_linear)"
-          />
-          <defs>
-            <linearGradient
-              id="paint0_linear"
-              x1="401"
-              y1="-253"
-              x2="401"
-              y2="807"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop offset="0.114583" stop-color="#FF7002" />
-              <stop offset="1" stop-color="#FFB57D" stop-opacity="0" />
-            </linearGradient>
-          </defs>
-        </svg>
-
       <header>
-        
-
         <h1>Max Mustermann</h1>
         <div id="mobile">
           <svg
+            id="mmenu"
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -106,14 +80,13 @@
         <section id="about">
           <h2>About Me</h2>
           <div class="content-wrapper">
-            
             <p class="first-p">
               <strong>Me,</strong> a Munich-based Frontend-Developer.
             </p>
             <p>
-              My set of skills include Html, Css and Javascript. In addition I'm
-              interested in Design. Longterm I would also like to get a bit more
-              into the server-side way of handling things.
+              My set of skills include Html, Css and Javascript. In addition I
+              have an interest in Design. Long-term I would like to be a
+              Full-Stack-Developer with a passion for transformation.
             </p>
             <div class="span">
               <span class="skill">HTML</span><span class="skill">CSS</span
@@ -123,37 +96,58 @@
         </section>
 
         <section id="projects">
-          <div class="cards">
-            <h2>Projects</h2>
-            <div class="content-wrapper">
-              
+          <h2>Projects</h2>
+          <div class="content-wrapper">
+            <div class="card-wrapper">
+              <div class="card project5">
+                <div class="project-wrapper">
+                  <img
+                    class="project-icon"
+                    src="icon/monitor-page.svg"
+                    alt="project"
+                  />
 
-              <div class="card-wrapper">
-                <div class="card project5">
-                  <a href="#"><img src="icon/monitor-page.svg" alt="project"></a>
                   <h3>Photo-Gallery</h3>
-                  <p>
-                    Uses two Jquery libraries in order to provide interactivity
-                  </p>
                 </div>
-                <div class="card project6">
-                  <a href="#"><img src="icon/monitor-page.svg" alt="project"></a>
+                <p>
+                  Uses two Jquery libraries in order to provide interactivity.
+                </p>
+              </div>
+              <div class="card project6">
+                <div class="project-wrapper">
+                  <img
+                    class="project-icon"
+                    src="icon/monitor-page.svg"
+                    alt="project"
+                  />
                   <h3>Gameshow</h3>
-                  <p>A phrase guessing game set up with JavaScript.</p>
                 </div>
-                <div class="card project7">
-                  <a href="#"><img src="icon/monitor-page.svg" alt="project"></a>
+                <p>A phrase guessing game set up with JavaScript.</p>
+              </div>
+              <div class="card project7">
+                <div class="project-wrapper">
+                  <img
+                    class="project-icon"
+                    src="icon/monitor-page.svg"
+                    alt="project"
+                  />
                   <h3>WebApp Dashboard</h3>
-                  <p>
-                    Gives you the impression of how a Dashboard could look like.
-                    Includes Charts.
-                  </p>
                 </div>
-                <div class="card project8">
-                  <a href="#"><img src="icon/monitor-page.svg" alt="project"></a>
+                <p>
+                  Gives you the impression of how a Dashboard could look like.
+                  Includes Charts.
+                </p>
+              </div>
+              <div class="card project8">
+                <div class="project-wrapper">
+                  <img
+                    class="project-icon"
+                    src="icon/monitor-page.svg"
+                    alt="project"
+                  />
                   <h3>Employee Directory</h3>
-                  <p>Displays employee information gathered through an API.</p>
                 </div>
+                <p>Displays employee information gathered through an API.</p>
               </div>
             </div>
           </div>
@@ -202,6 +196,22 @@
           </div>
         </section>
       </main>
+    </div>
+    <!-- The mobile modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-flex">
+          <div>
+            <p id="aboutm" class="mobile-ps">About</p>
+            <p id="projectm" class="mobile-ps">My work</p>
+            <p id="contactm" class="mobile-ps">Contact</p>
+          </div>
+          <span class="close"
+            ><img class="mobile-x" src="icon/close-mobile-x.svg" alt="close-x"
+          /></span>
+        </div>
+      </div>
     </div>
 
     <script src="js/app.js"></script>

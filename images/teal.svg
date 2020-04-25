@@ -1,0 +1,24 @@
+<svg
+        id="teal"
+        viewBox="0 0 522 552"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M522 28.8935V552H42.9913C15.5344 499.703 0 440.166 0 377C0 168.789 168.789 0 377 0C428.382 0 477.364 10.2792 522 28.8935Z"
+          fill="url(#paint1_linear)"
+        />
+        <defs>
+          <linearGradient
+            id="paint1_linear"
+            x1="429.5"
+            y1="771.5"
+            x2="601.72"
+            y2="14.4126"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stop-color="#07A0B3" />
+            <stop offset="1" stop-color="#A5DDE4" stop-opacity="0" />
+          </linearGradient>
+        </defs>
+      </svg>
