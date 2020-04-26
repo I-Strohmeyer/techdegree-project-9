@@ -10,7 +10,7 @@ const projectbtn = document.getElementById('projectbtn');
 const contactbtn = document.getElementById('contactbtn');
 
 const about = document.getElementById('about');
-const project = document.getElementById('projects');
+const project = document.getElementById('project');
 const contact = document.getElementById('contact');
 
 // Get the modal
@@ -60,50 +60,50 @@ menubutton.addEventListener('click', event => {
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     modal.style.display = "none";
-}
+};
 
 // closes modal when you click outside
 window.onclick = function(event) {
     if (event.target == modal) {
       modal.style.display = "none";
     }
-}
+};
 
 // mobile menu selection when modal is open
 aboutm.addEventListener('click', event => {
     modal.style.display = "none";
     about.style.display = "block";
-    projects.style.display = "none";
+    project.style.display = "none";
     contact.style.display = "none";
-})
+});
 
 // mobile menu selection when modal is open
 projectm.addEventListener('click', event => {
     modal.style.display = "none";
     about.style.display = "none";
-    projects.style.display = "block";
+    project.style.display = "block";
     contact.style.display = "none";
-})
+});
 
 // mobile menu selection when modal is open
 contactm.addEventListener('click', event => {
     modal.style.display = "none";
     about.style.display = "none";
-    projects.style.display = "none";
+    project.style.display = "none";
     contact.style.display = "block";
-})
+});
 
 
 // switch content for menu entries (about)
 aboutbtn.addEventListener( 'click', event => {
     about.style.display = "block";
-    projects.style.display = "none";
+    project.style.display = "none";
     contact.style.display = "none";
 });
 
 // switch content for menu entries (project)
 projectbtn.addEventListener( 'click', event => {
-    projects.style.display = "block";
+    project.style.display = "block";
     about.style.display = "none";
     contact.style.display = "none";
 });
@@ -111,7 +111,7 @@ projectbtn.addEventListener( 'click', event => {
 // switch content for menu entries (contact)
 contactbtn.addEventListener( 'click', event => {
     contact.style.display = "flex";
-    projects.style.display = "none";
+    project.style.display = "none";
     about.style.display = "none";
 });
 

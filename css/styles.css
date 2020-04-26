@@ -16,15 +16,15 @@ body {
 }
 
 .super-container {
-    max-width: 1920px;
-    min-height: 100vh;
-    position: relative;
-    margin: 0 auto;
+  max-width: 1920px;
+  min-height: 100vh;
+  position: relative;
+  margin: 0 auto;
 }
 
 main {
-  background-color: rgba(0,0,0,0.25);
-  border: 2px solid rgba(255,255,255,0.6);
+  background-color: rgba(0, 0, 0, 0.25);
+  border: 2px solid rgba(255, 255, 255, 0.6);
   border-radius: 8px;
   margin: auto 32px;
   position: relative;
@@ -40,76 +40,75 @@ section {
 ***********************/
 
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 100;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0, 0, 0); /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
-    -webkit-animation-name: fadeIn;
-    -webkit-animation-duration: 0.4s;
-    animation-name: fadeIn;
-    animation-duration: 0.4s;
-  }
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+}
 
-  .modal-content {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    background-color: #07A0B3;
-    font-weight: 700;
-    color: #fff;
-    text-align: right;
-    border-top-left-radius: 400px;
-    
-    width: 400px;
-    height: 400px;
-    padding: 100px 30px 50px 50px;
-    -webkit-animation-name: slideIn;
-    -webkit-animation-duration: 0.4s;
-    animation-name: slideIn;
-    animation-duration: 0.4s;
-  }
-  
-  .modal-flex {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: column;
-  }
+.modal-content {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: #07a0b3;
+  font-weight: 700;
+  color: #fff;
+  text-align: right;
+  border-top-left-radius: 400px;
 
-  .mobile-ps {
-      margin-bottom: 32px;
-      font-size: 28px;
-  }
+  width: 400px;
+  height: 400px;
+  padding: 100px 30px 50px 50px;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+}
 
-  .mobile-ps:hover {
-      cursor: pointer;
-  }
+.modal-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
 
-  .mobile-x {
-      width: 43px;
-      height: 43px;
-      padding: 8px;
-      border-radius: 50%;
-      border: 2px solid #fff;
-  }
-  
-  /* The Close Button */
-  .close {
-    
-    color: #fff;
-    margin-top: 60px;
-  }
-  
-  .close:hover,
-  .close:focus {
-    text-decoration: none;
-    cursor: pointer;
-  }
+.mobile-ps {
+  margin-bottom: 32px;
+  font-size: 28px;
+}
+
+.mobile-ps:hover {
+  cursor: pointer;
+}
+
+.mobile-x {
+  width: 43px;
+  height: 43px;
+  padding: 8px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+/* The Close Button */
+.close {
+  color: #fff;
+  margin-top: 60px;
+}
+
+.close:hover,
+.close:focus {
+  text-decoration: none;
+  cursor: pointer;
+}
 
 /***********************
 *      Header          *
@@ -220,7 +219,7 @@ section p {
   display: inline-block;
   text-align: left;
   padding: 8px;
-  background: rgba(0,0,0,0.3);
+  background: rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   margin-right: 8px;
 }
@@ -228,13 +227,13 @@ section p {
 /***********************
 *     Projects         *
 ***********************/
-#projects {
+#project {
   display: none;
 }
 
 .card:hover {
-    cursor: pointer;
-    text-decoration: underline;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .card-wrapper {
@@ -244,20 +243,20 @@ section p {
 }
 
 .project-wrapper {
-    display: flex;
-    align-items: center;
-    padding-bottom: 8px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 8px;
 }
 
 h3 {
-    font-size: 20px;
-    
-    display: inline-block;
-    margin-left: 12px;
+  font-size: 20px;
+
+  display: inline-block;
+  margin-left: 12px;
 }
 
 .project-icon {
-    height: 32px;
+  height: 32px;
 }
 
 /***********************
@@ -268,12 +267,12 @@ h3 {
 }
 
 #contact a {
-    display: inline-block;
-    padding: 18px 18px 18px 0;
+  display: inline-block;
+  padding: 18px 18px 18px 0;
 }
 
 .icon {
-    height: 30px;
+  height: 30px;
 }
 
 /***********************
@@ -301,8 +300,6 @@ h3 {
 ***********************/
 
 @media (min-width: 768px) {
-
-   
   header {
     display: flex;
     justify-content: space-between;
@@ -338,8 +335,8 @@ h3 {
     font-size: 3.8em;
   }
   .card-wrapper {
-      gap: 20px;
-      padding-top: 24px;
+    gap: 20px;
+    padding-top: 24px;
   }
   #teal {
     position: fixed;
@@ -347,53 +344,51 @@ h3 {
     height: 522px;
   }
   .skill {
-      margin-right: 20px;
-      background: rgba(0,0,0,0.15);
+    margin-right: 20px;
+    background: rgba(0, 0, 0, 0.15);
   }
 }
 
 @media (min-width: 1024px) {
-  
-  
   main {
-      border-radius: 16px;
-  } 
+    border-radius: 16px;
+  }
   .content-wrapper {
-      max-width: 850px;
+    max-width: 850px;
   }
   header {
-      margin-bottom: 70px;
+    margin-bottom: 70px;
   }
   header button {
     margin-left: 48px;
   }
   section h2 {
-      font-size: 6.5em;
-      left: -90px;
-      top: -60px;
-      line-height: 104px;
+    font-size: 6.5em;
+    left: -90px;
+    top: -60px;
+    line-height: 104px;
   }
   section p {
-      font-size: 1.5em;
+    font-size: 1.5em;
   }
   h3 {
-      font-size: 30px;
-      font-weight: 500;
+    font-size: 30px;
+    font-weight: 500;
   }
   .card-wrapper {
     grid-template-columns: 1fr 1fr;
     gap: 28px 92px;
   }
   .social-wrapper {
-      margin-top: 40px;
+    margin-top: 40px;
   }
 }
 
 @media (min-width: 1920px) {
-    #teal {
-        position: absolute;
-    }
-    #orange {
-        position: absolute;
-    }
+  #teal {
+    position: absolute;
+  }
+  #orange {
+    position: absolute;
+  }
 }
