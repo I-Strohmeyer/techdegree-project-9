@@ -234,6 +234,7 @@ section p {
 
 .card:hover {
     cursor: pointer;
+    text-decoration: underline;
 }
 
 .card-wrapper {
