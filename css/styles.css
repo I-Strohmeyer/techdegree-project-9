@@ -398,7 +398,7 @@ h3 {
     display: inline-block;
     position: absolute;
     right: 0;
-    top: 0;
+    top: -40px;
     z-index: -2;
     
     height: 500px;

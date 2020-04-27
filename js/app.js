@@ -115,5 +115,5 @@ contactbtn.addEventListener( 'click', event => {
     about.style.display = "none";
 });
 
-
-
+// Animations
+//_______________________
