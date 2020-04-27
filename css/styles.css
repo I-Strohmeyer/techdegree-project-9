@@ -39,6 +39,10 @@ section {
     cursor: pointer;
 }
 
+#portrait {
+  display: none;
+}
+
 /***********************
 *      Mobile Modal    *
 ***********************/
@@ -360,6 +364,7 @@ h3 {
   .content-wrapper {
     max-width: 850px;
   }
+  
   header {
     margin-bottom: 70px;
   }
@@ -385,6 +390,18 @@ h3 {
   }
   .social-wrapper {
     margin-top: 40px;
+  }
+}
+
+@media (min-width: 1800px) {
+  #portrait {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -2;
+    
+    height: 500px;
   }
 }
 
