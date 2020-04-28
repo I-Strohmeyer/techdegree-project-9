@@ -127,7 +127,7 @@ header {
 }
 
 header h1 {
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 600;
   padding-bottom: 80px;
   color: #fff;
@@ -296,7 +296,7 @@ h3 {
 
 #teal {
   position: fixed;
-  z-index: 98;
+  z-index: -1;
   bottom: 0;
   right: 0;
   width: 320px;
@@ -312,6 +312,9 @@ h3 {
     display: flex;
     justify-content: space-between;
     margin: 0 0 0 0;
+  }
+  header h1 {
+    font-size: 1.6em;
   }
   header button {
     display: inline-block;
@@ -350,6 +353,7 @@ h3 {
     position: fixed;
     width: 522px;
     height: 522px;
+    z-index: 98;
   }
   .skill {
     margin-right: 20px;
@@ -367,6 +371,9 @@ h3 {
   
   header {
     margin-bottom: 70px;
+  }
+  header h1 {
+    font-size: 1.7em;
   }
   header button {
     margin-left: 48px;
