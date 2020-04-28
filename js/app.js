@@ -35,6 +35,7 @@ const project8 = document.getElementById('project8');
 var textWrapperAbout = document.querySelector('.is12');
 textWrapperAbout.innerHTML = textWrapperAbout.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
+//Initial page load
 anime.timeline({ loop: false })
     .add({
         targets: '.is12 .letter',
@@ -44,7 +45,14 @@ anime.timeline({ loop: false })
         easing: "easeOutExpo",
         duration: 1200,
         delay: (el, i) => 300 + 30 * i
-    });
+    })
+    .add({
+        targets: '.content-wrapper',
+        opacity: [0, 1],
+        duration: 1500,
+        easing: "linear"
+    }, '200');
+
 
 function animateabout() {
     anime.timeline({ loop: false })
@@ -61,7 +69,7 @@ function animateabout() {
             opacity: [0, 1],
             duration: 1500,
             easing: "linear"
-        }, '300');
+        }, '200');
 };
 
 
@@ -85,7 +93,7 @@ function animateproject() {
             opacity: [0, 1],
             duration: 1500,
             easing: "linear"
-        }, '300');
+        }, '200');
 };
 
 // Wrap every letter contact in a span
@@ -109,7 +117,7 @@ function animatecontact() {
             opacity: [0, 1],
             duration: 1500,
             easing: "linear"
-        }, '300');
+        }, '200');
 };
 
 
