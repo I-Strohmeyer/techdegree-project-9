@@ -51,7 +51,7 @@ anime.timeline({ loop: false })
         opacity: [0, 1],
         duration: 1500,
         easing: "linear"
-    }, '200');
+    }, '50');
 
 
 function animateabout() {
