@@ -35,64 +35,82 @@ const project8 = document.getElementById('project8');
 var textWrapperAbout = document.querySelector('.is12');
 textWrapperAbout.innerHTML = textWrapperAbout.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-anime.timeline({loop: false})
-  .add({
-    targets: '.is12 .letter',
-    translateX: [40,0],
-    translateZ: 0,
-    opacity: [0,1],
-    easing: "easeOutExpo",
-    duration: 1200,
-    delay: (el, i) => 300 + 30 * i
-  });
-
-  function animateabout () {
-    anime.timeline({loop: false})
-        .add({
+anime.timeline({ loop: false })
+    .add({
         targets: '.is12 .letter',
-        translateX: [40,0],
+        translateX: [40, 0],
         translateZ: 0,
-        opacity: [0,1],
+        opacity: [0, 1],
         easing: "easeOutExpo",
         duration: 1200,
-        delay: (el, i) => 150 + 30 * i
+        delay: (el, i) => 300 + 30 * i
     });
-  };
+
+function animateabout() {
+    anime.timeline({ loop: false })
+        .add({
+            targets: '.is12 .letter',
+            translateX: [40, 0],
+            translateZ: 0,
+            opacity: [0, 1],
+            easing: "easeOutExpo",
+            duration: 1200,
+            delay: (el, i) => 150 + 30 * i
+        }).add({
+            targets: '.content-wrapper',
+            opacity: [0, 1],
+            duration: 1500,
+            easing: "linear"
+        }, '300');
+};
+
 
 // Wrap every letter projects in a span
 var textWrapperProject = document.querySelector('.is13');
 textWrapperProject.innerHTML = textWrapperProject.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-  function animateproject () {
-    anime.timeline({loop: false})
+function animateproject() {
+    anime.timeline({ loop: false })
         .add({
-        targets: '.is13 .letter',
-        translateX: [40,0],
-        translateZ: 0,
-        opacity: [0,1],
-        easing: "easeOutExpo",
-        duration: 1200,
-        delay: (el, i) => 150 + 30 * i
-    });
-  };
+            targets: '.is13 .letter',
+            translateX: [40, 0],
+            translateZ: 0,
+            opacity: [0, 1],
+            easing: "easeOutExpo",
+            duration: 1200,
+            delay: (el, i) => 150 + 30 * i
+        })
+        .add({
+            targets: '.content-wrapper',
+            opacity: [0, 1],
+            duration: 1500,
+            easing: "linear"
+        }, '300');
+};
 
-  // Wrap every letter contact in a span
+// Wrap every letter contact in a span
 var textWrapperContact = document.querySelector('.is14');
 textWrapperContact.innerHTML = textWrapperContact.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
 
-  function animatecontact() {
-    anime.timeline({loop: false})
+function animatecontact() {
+    anime.timeline({ loop: false })
         .add({
-        targets: '.is14 .letter',
-        translateX: [40,0],
-        translateZ: 0,
-        opacity: [0,1],
-        easing: "easeOutExpo",
-        duration: 1200,
-        delay: (el, i) => 150 + 30 * i
-    });
-  };
+            targets: '.is14 .letter',
+            translateX: [40, 0],
+            translateZ: 0,
+            opacity: [0, 1],
+            easing: "easeOutExpo",
+            duration: 1200,
+            delay: (el, i) => 150 + 30 * i
+        })
+        .add({
+            targets: '.content-wrapper',
+            opacity: [0, 1],
+            duration: 1500,
+            easing: "linear"
+        }, '300');
+};
 
 
 // Events
@@ -125,14 +143,14 @@ menubutton.addEventListener('click', event => {
 });
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+span.onclick = function () {
     modal.style.display = "none";
 };
 
 // closes modal when you click outside
-window.onclick = function(event) {
+window.onclick = function (event) {
     if (event.target == modal) {
-      modal.style.display = "none";
+        modal.style.display = "none";
     }
 };
 
@@ -165,7 +183,7 @@ contactm.addEventListener('click', event => {
 
 
 // switch content for menu entries (about)
-aboutbtn.addEventListener( 'click', event => {
+aboutbtn.addEventListener('click', event => {
     about.style.display = "block";
     project.style.display = "none";
     contact.style.display = "none";
@@ -173,7 +191,7 @@ aboutbtn.addEventListener( 'click', event => {
 });
 
 // switch content for menu entries (project)
-projectbtn.addEventListener( 'click', event => {
+projectbtn.addEventListener('click', event => {
     project.style.display = "block";
     about.style.display = "none";
     contact.style.display = "none";
@@ -181,7 +199,7 @@ projectbtn.addEventListener( 'click', event => {
 });
 
 // switch content for menu entries (contact)
-contactbtn.addEventListener( 'click', event => {
+contactbtn.addEventListener('click', event => {
     contact.style.display = "flex";
     project.style.display = "none";
     about.style.display = "none";
@@ -190,4 +208,3 @@ contactbtn.addEventListener( 'click', event => {
 
 
 
-  
