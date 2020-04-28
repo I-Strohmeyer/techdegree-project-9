@@ -28,6 +28,73 @@ const project7 = document.getElementById('project7');
 const project8 = document.getElementById('project8');
 
 
+// Animations
+//_______________________
+
+// Wrap every letter about me in a span
+var textWrapperAbout = document.querySelector('.is12');
+textWrapperAbout.innerHTML = textWrapperAbout.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: false})
+  .add({
+    targets: '.is12 .letter',
+    translateX: [40,0],
+    translateZ: 0,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 1200,
+    delay: (el, i) => 300 + 30 * i
+  });
+
+  function animateabout () {
+    anime.timeline({loop: false})
+        .add({
+        targets: '.is12 .letter',
+        translateX: [40,0],
+        translateZ: 0,
+        opacity: [0,1],
+        easing: "easeOutExpo",
+        duration: 1200,
+        delay: (el, i) => 150 + 30 * i
+    });
+  };
+
+// Wrap every letter projects in a span
+var textWrapperProject = document.querySelector('.is13');
+textWrapperProject.innerHTML = textWrapperProject.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+  function animateproject () {
+    anime.timeline({loop: false})
+        .add({
+        targets: '.is13 .letter',
+        translateX: [40,0],
+        translateZ: 0,
+        opacity: [0,1],
+        easing: "easeOutExpo",
+        duration: 1200,
+        delay: (el, i) => 150 + 30 * i
+    });
+  };
+
+  // Wrap every letter contact in a span
+var textWrapperContact = document.querySelector('.is14');
+textWrapperContact.innerHTML = textWrapperContact.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+
+  function animatecontact() {
+    anime.timeline({loop: false})
+        .add({
+        targets: '.is14 .letter',
+        translateX: [40,0],
+        translateZ: 0,
+        opacity: [0,1],
+        easing: "easeOutExpo",
+        duration: 1200,
+        delay: (el, i) => 150 + 30 * i
+    });
+  };
+
+
 // Events
 //_______________________
 
@@ -75,6 +142,7 @@ aboutm.addEventListener('click', event => {
     about.style.display = "block";
     project.style.display = "none";
     contact.style.display = "none";
+    animateabout();
 });
 
 // mobile menu selection when modal is open
@@ -83,6 +151,7 @@ projectm.addEventListener('click', event => {
     about.style.display = "none";
     project.style.display = "block";
     contact.style.display = "none";
+    animateproject();
 });
 
 // mobile menu selection when modal is open
@@ -91,6 +160,7 @@ contactm.addEventListener('click', event => {
     about.style.display = "none";
     project.style.display = "none";
     contact.style.display = "block";
+    animatecontact();
 });
 
 
@@ -99,6 +169,7 @@ aboutbtn.addEventListener( 'click', event => {
     about.style.display = "block";
     project.style.display = "none";
     contact.style.display = "none";
+    animateabout();
 });
 
 // switch content for menu entries (project)
@@ -106,6 +177,7 @@ projectbtn.addEventListener( 'click', event => {
     project.style.display = "block";
     about.style.display = "none";
     contact.style.display = "none";
+    animateproject();
 });
 
 // switch content for menu entries (contact)
@@ -113,7 +185,9 @@ contactbtn.addEventListener( 'click', event => {
     contact.style.display = "flex";
     project.style.display = "none";
     about.style.display = "none";
+    animatecontact();
 });
 
-// Animations
-//_______________________
+
+
+  

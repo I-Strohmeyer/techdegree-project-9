@@ -413,3 +413,10 @@ h3 {
     position: absolute;
   }
 }
+
+
+.is12 .letter, .is13 .letter, .is14 .letter {
+  display: inline-block;
+  
+}
+
